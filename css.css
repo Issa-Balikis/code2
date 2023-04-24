@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dda0dd;
+    color: black;
+    margin: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    background-image: linear-gradient(plum, whitesmoke, rgb(236, 142, 158));
+}
+
+nav {
+    margin: 0 auto 1rem;
+    font-size: 2rem;
+    border: 2px solid;
+    border-radius: 3rem;
+    line-height: 7rem;
+}
+
+.left {
+    text-align: left;
+}
+h1 {
+    padding: 1rem;
+    background: palevioletred;
+    border-radius: 3rem 3rem 0 0;
+    line-height: 4rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    border-top: 1px solid;
+}
+
+li a {
+    display: block;
+}
+
+li a,
+li a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+li a:hover,
+li a:focus {
+    background: rgb(185, 97, 126);
+    color: whitesmoke;
+    cursor: pointer;
+} 
+
+li:last-child a {
+    border-radius: 0 0 3rem 3rem;
+}
+p {
+    color: rgb(0, 0, 0);
+    width: 50ch;
+    line-height: 2rem;
+}
+
+.height {
+    line-height: 2rem;
+}
+
+aside {
+    line-height: 2rem;
+}
+
+.side {
+    display:inline-block;
+    margin: 1rem;
+}
+.round {
+    width: 200px;
+    border-radius: 100px;
+}
+
+.height{
+    line-height: 4rem;
+}
+table, tr, th, td, caption {
+    border: 1px solid #eee;
+    font-family:'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem; 
+    width: 50ch;
+}
+
+@media (prefers-color-scheme: light) {
+
+    h1 { 
+        background: rgb(49, 41, 41);
+        color: whitesmoke;
+        
+    }
+
+    body {
+        background-image: linear-gradient( rgb(31, 24, 24), white);
+    }
+
+        li a:hover,
+        li a:focus {
+            background: rgb(82, 66, 71);
+            color: whitesmoke;
+            cursor: pointer;
+}
+}
